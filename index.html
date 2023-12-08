@@ -3,189 +3,648 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>for you</title>
-    <style>
-      body {
-        background-color: #a5a58d;
-        width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
-        margin: -8px;
+    <title>Document</title>
+    <style>body {
+      background-color: #a5a58d;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      margin: -8px;
+    }
+    
+    @font-face {
+      font-family: "alegreyabold_italic";
+      src: url("font/alegreya-bolditalic-webfont.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: "redressedregular";
+      src: url("Redressed-webfont.eot");
+      src: url("font/Redressed-webfont.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    .CRUSH {
+      background-color: #fff1e6;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    div .FOR {
+      font-family: "redressedregular";
+    
+      text-shadow: 1px 1px 3px #000000;
+      color: #d6ccc2;
+      font-size: 3.5em;
+      margin-bottom: -0.19em;
+    }
+    
+    div .GELSY {
+      font-family: "alegreyabold_italic";
+    
+      text-shadow: 1px 1px 3px #000000;
+      color: #d6ccc2;
+      font-size: 2.8em;
+    }
+    
+    .wave1 {
+      width: 100%;
+    }
+    
+    /* pernyataan */
+    
+    .pernyataan {
+      font-family: "alegreyabold_italic";
+      width: 100%;
+      height: 200%;
+      flex-direction: column;
+      display: flex;
+    }
+    
+    /* scroll */
+    
+    /* scroll */
+    
+    .awalan,
+    .akhiran {
+      text-indent: 3em;
+      text-align: justify;
+      position: relative;
+      left: 69px;
+      justify-content: center;
+      text-align: center;
+      width: 90%;
+      align-items: center;
+      display: flex;
+      font-size: 1.7em;
+      color: #4b4e41;
+    }
+    
+    .pernyataan1 {
+      display: flex;
+      margin: 20px;
+      box-sizing: border-box;
+      flex: 1;
+      margin-left: 8em;
+      margin-right: 26em;
+    }
+    
+    .pernyataan2 {
+      display: flex;
+      margin: 20px;
+      box-sizing: border-box;
+      flex: 1;
+      margin-left: 26em;
+      margin-right: 8em;
+      text-align: end;
+    }
+    .pernyataan3 {
+      display: flex;
+      margin: 20px;
+      box-sizing: border-box;
+      flex: 1;
+      margin-left: 8em;
+      margin-right: 26em;
+    }
+    
+    .pernyataan4 {
+      display: flex;
+      margin: 20px;
+      box-sizing: border-box;
+      flex: 1;
+      margin-left: 26em;
+      margin-right: 8em;
+      text-align: end;
+    }
+    
+    div .tanggal {
+      position: relative;
+      top: 60px;
+      display: flex;
+      justify-content: center;
+      font-size: 2em;
+      flex: 1;
+      color: #fefae0;
+      word-spacing: 30px;
+    }
+    
+    .isi {
+      padding-left: 10px;
+      flex: 4;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 1.7em;
+      color: #4b4e41;
+    }
+    
+    /*  */
+    
+    /* pertanyaan */
+    
+    .pertanyaan {
+      margin-top: -20px;
+      background-color: #fff1e6;
+      height: 100%;
+      text-align: center;
+    }
+    
+    .paragraf {
+      position: relative;
+      top: 40px;
+    }
+    
+    .pertanyaannya {
+      font-family: "redressedregular";
+      text-shadow: 1px 1px 3px #000000;
+      color: #d6ccc2;
+      font-size: 3em;
+    }
+    
+    .pertanyaan .note {
+      font-family: "redressedregular";
+      text-shadow: 1px 1px 3px #000000;
+      font-size: 3em;
+      color: red;
+    }
+    
+    .penjelasan {
+      margin-top: -40px;
+      color: #cb997e;
+      position: relative;
+      top: 73px;
+      font-family: "redressedregular";
+      text-shadow: 1px 1px 1px #000000;
+      font-size: 1.7em;
+    }
+    
+    .penjelasan2 {
+      margin-top: -20px;
+      padding: 0 100px;
+      color: #cb997e;
+      position: relative;
+      top: 73px;
+      font-family: "redressedregular";
+      text-shadow: 1px 1px 1px #000000;
+      font-size: 1.7em;
+    }
+    .penjelasan3 {
+      margin-top: -30px;
+      padding: 15px 100px;
+      color: #cb997e;
+      position: relative;
+      top: 73px;
+      font-family: "redressedregular";
+      text-shadow: 1px 1px 1px #000000;
+      font-size: 1.7em;
+    }
+    
+    .pilihan {
+      position: relative;
+      top: 236px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .button-57 {
+      margin: 10px;
+      border-radius: 6px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #18181a;
+      color: #18181a;
+      display: inline-block;
+      font-size: 15px;
+      line-height: 15px;
+      padding: 18px 38px 17px;
+      text-decoration: none;
+      cursor: pointer;
+      background: #a5a58d;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-57 span:first-child {
+      position: relative;
+      transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+      z-index: 10;
+    }
+    
+    .button-57 span:last-child {
+      color: white;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+      z-index: 100;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      transform: translateY(225%) translateX(-50%);
+      height: 14px;
+      line-height: 13px;
+    }
+    
+    .button-57:after {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      transform-origin: bottom center;
+      transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+      transform: skewY(9.3deg) scaleY(0);
+      z-index: 50;
+    }
+    
+    .button-57:hover:after {
+      transform-origin: bottom center;
+      transform: skewY(9.3deg) scaleY(2);
+    }
+    
+    .button-57:hover span:last-child {
+      transform: translateX(-50%) translateY(-100%);
+      opacity: 1;
+      transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+    }
+    
+    .button-86 {
+      all: unset;
+      width: 202px;
+      height: 30px;
+      font-size: 16px;
+      background: transparent;
+      border: none;
+      position: relative;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* white-space: nowrap; */
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      left: 648px;
+    }
+    
+    .button-86::after,
+    .button-86::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -99999;
+      transition: all 0.4s;
+    }
+    
+    .button-86::before {
+      transform: translate(0%, 0%);
+      width: 100%;
+      height: 100%;
+      background: #7f5539;
+      border-radius: 10px;
+    }
+    
+    .button-86::after {
+      transform: translate(10px, 10px);
+      width: 35px;
+      height: 35px;
+      background: #ffffff15;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 50px;
+    }
+    
+    .button-86:hover::before {
+      transform: translate(5%, 20%);
+      width: 110%;
+      height: 110%;
+    }
+    
+    .button-86:hover::after {
+      border-radius: 10px;
+      transform: translate(0, 0);
+      width: 100%;
+      height: 100%;
+    }
+    
+    .button-86:active::after {
+      transition: 0s;
+      transform: translate(0, 5%);
+    }
+    
+    /* animasi */
+    
+    /* :root {
+      --delay: 0;
+      --duration: 800ms;
+      --iterations: 1;
+    } */
+    /* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+    
+    .reveal-text,
+    .reveal-text::after {
+      animation-delay: var(--animation-delay, 2s);
+      animation-iteration-count: var(--iterations, 1);
+      animation-duration: var(--duration, 800ms);
+      animation-fill-mode: both;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    
+    .reveal-text {
+      --animation-delay: var(--delay, 0);
+      --animation-duration: var(--duration, 800ms);
+      --animation-iterations: var(--iterations, 1);
+      position: relative;
+      font-size: 10vw;
+      animation-name: clip-text;
+      color: #fff;
+      white-space: nowrap;
+      cursor: default;
+    
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #cb997e;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        pointer-events: none;
+        animation-name: text-revealer;
       }
-
-      @font-face {
-        font-family: "alegreyabold_italic";
-        src: url("font/alegreya-bolditalic-webfont.woff") format("woff");
-        font-weight: normal;
-        font-style: normal;
+    }
+    
+    @keyframes clip-text {
+      from {
+        clip-path: inset(0 100% 0 0);
       }
-
-      @font-face {
-        font-family: "redressedregular";
-        src: url("Redressed-webfont.eot");
-        src: url("font/Redressed-webfont.woff") format("woff");
-        font-weight: normal;
-        font-style: normal;
+      to {
+        clip-path: inset(0 0 0 0);
       }
-
+    }
+    
+    @keyframes text-revealer {
+      0%,
+      50% {
+        transform-origin: 0 50%;
+      }
+    
+      60%,
+      100% {
+        transform-origin: 100% 50%;
+      }
+    
+      60% {
+        transform: scaleX(1);
+      }
+    
+      100% {
+        transform: scaleX(0);
+      }
+    }
+    
+    /* animasi 2 */
+    
+    /* :root {
+      --delay: 0;
+      --duration: 800ms;
+      --iterations: 1;
+    } */
+    /* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+    
+    .reveal-text2,
+    .reveal-text2::after {
+      animation-delay: var(--animation-delay, 2s);
+      animation-iteration-count: var(--iterations, 1);
+      animation-duration: var(--duration, 800ms);
+      animation-fill-mode: both;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    
+    .reveal-text2 {
+      --animation-delay: var(--delay, 3s);
+      --animation-duration: var(--duration, 800ms);
+      --animation-iterations: var(--iterations, 1);
+      position: relative;
+      font-size: 10vw;
+      animation-name: clip-text;
+      color: #fff;
+      white-space: nowrap;
+      cursor: default;
+    
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #cb997e;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        pointer-events: none;
+        animation-name: text-revealer;
+      }
+    }
+    
+    @keyframes clip-text {
+      from {
+        clip-path: inset(0 100% 0 0);
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+    
+    @keyframes text-revealer {
+      0%,
+      50% {
+        transform-origin: 0 50%;
+      }
+    
+      60%,
+      100% {
+        transform-origin: 100% 50%;
+      }
+    
+      60% {
+        transform: scaleX(1);
+      }
+    
+      100% {
+        transform: scaleX(0);
+      }
+    }
+    
+    /* responsive */
+    
+    @media screen and (max-width: 576px) {
       .CRUSH {
         background-color: #fff1e6;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-
-      div .FOR {
-        font-family: "redressedregular";
-
-        text-shadow: 1px 1px 3px #000000;
-        color: #d6ccc2;
-        font-size: 3.5em;
-        margin-bottom: -0.19em;
-      }
-
+    
       div .GELSY {
         font-family: "alegreyabold_italic";
-
         text-shadow: 1px 1px 3px #000000;
         color: #d6ccc2;
-        font-size: 2.8em;
+        font-size: 1.8em;
       }
-
-      .wave1 {
-        width: 100%;
+    
+      div .FOR {
+        font-family: "redressedregular";
+        text-shadow: 1px 1px 3px #000000;
+        color: #d6ccc2;
+        font-size: 2.5em;
+        margin-bottom: -0.19em;
       }
-
-      /* pernyataan */
-
-      .pernyataan {
-        font-family: "alegreyabold_italic";
-        width: 100%;
-        height: 200%;
-        flex-direction: column;
-        display: flex;
-      }
-
-      /* scroll */
-
-      /* scroll */
-
+    
       .awalan,
       .akhiran {
-        text-indent: 3em;
-        text-align: justify;
         position: relative;
-        left: 69px;
+        left: 34px;
         justify-content: center;
         text-align: center;
         width: 90%;
         align-items: center;
         display: flex;
-        font-size: 1.7em;
+        font-size: 1.25em;
         color: #4b4e41;
+        text-indent: 3em;
+        text-align: justify;
       }
-
-      .pernyataan1 {
-        display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 8em;
-        margin-right: 26em;
+    
+      .awalan {
+        top: 0;
       }
-
-      .pernyataan2 {
-        display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 26em;
-        margin-right: 8em;
-        text-align: end;
+      .akhiran {
+        top: -165px;
       }
-      .pernyataan3 {
-        display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 8em;
-        margin-right: 26em;
-      }
-
-      .pernyataan4 {
-        display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 26em;
-        margin-right: 8em;
-        text-align: end;
-      }
-
-      div .tanggal {
-        position: relative;
-        top: 60px;
-        display: flex;
-        justify-content: center;
-        font-size: 2em;
-        flex: 1;
-        color: #fefae0;
-        word-spacing: 30px;
-      }
-
+    
       .isi {
         padding-left: 10px;
         flex: 4;
         justify-content: center;
         align-items: center;
         display: flex;
-        font-size: 1.7em;
+        font-size: 1.25em;
         color: #4b4e41;
       }
-
-      /*  */
-
-      /* pertanyaan */
-
+    
+      .pernyataan {
+        font-family: "alegreyabold_italic";
+        width: 100%;
+        height: 232%;
+        flex-direction: column;
+        display: flex;
+        margin-bottom: -145px;
+      }
+    
+      .pernyataan1 {
+        position: relative;
+        top: -30px;
+      }
+      .pernyataan2 {
+        position: relative;
+        top: -100px;
+      }
+      .pernyataan3 {
+        position: relative;
+        top: -140px;
+      }
+      .pernyataan4 {
+        position: relative;
+        top: -165px;
+      }
+    
+      .pernyataan1,
+      .pernyataan3 {
+        display: flex;
+        /* margin-top: -35px; */
+        box-sizing: border-box;
+        flex: 1;
+        margin-left: 3em;
+        margin-right: 7em;
+      }
+    
+      .pernyataan2,
+      .pernyataan4 {
+        display: flex;
+        box-sizing: border-box;
+        flex: 1;
+        margin-left: 7em;
+        margin-right: 3em;
+        text-align: end;
+      }
+    
       .pertanyaan {
         margin-top: -20px;
         background-color: #fff1e6;
         height: 100%;
         text-align: center;
+        padding-top: 94px;
       }
-
-      .paragraf {
-        position: relative;
-        top: 40px;
-      }
-
+    
       .pertanyaannya {
         font-family: "redressedregular";
         text-shadow: 1px 1px 3px #000000;
         color: #d6ccc2;
-        font-size: 3em;
+        font-size: 1.8em;
       }
-
+    
+      div .tanggal {
+        text-shadow: 1px 1px 3px #000000;
+        position: relative;
+        top: 78px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.6em;
+        flex: 1.2;
+        color: #fefae0;
+        word-spacing: 30px;
+      }
+    
       .pertanyaan .note {
         font-family: "redressedregular";
         text-shadow: 1px 1px 3px #000000;
-        font-size: 3em;
+        font-size: 1.8em;
         color: red;
       }
-
+    
       .penjelasan {
-        margin-top: -40px;
+        margin-top: -43px;
+        padding: 15px 100px;
         color: #cb997e;
         position: relative;
         top: 73px;
         font-family: "redressedregular";
         text-shadow: 1px 1px 1px #000000;
-        font-size: 1.7em;
+        font-size: 1.25em;
       }
-
       .penjelasan2 {
         margin-top: -20px;
         padding: 0 100px;
@@ -194,492 +653,27 @@
         top: 73px;
         font-family: "redressedregular";
         text-shadow: 1px 1px 1px #000000;
-        font-size: 1.7em;
+        font-size: 1.25em;
       }
       .penjelasan3 {
-        margin-top: -30px;
+        margin-top: -20px;
         padding: 15px 100px;
         color: #cb997e;
         position: relative;
         top: 73px;
         font-family: "redressedregular";
         text-shadow: 1px 1px 1px #000000;
-        font-size: 1.7em;
+        font-size: 1.25em;
       }
-
+    
       .pilihan {
         position: relative;
-        top: 236px;
+        top: 133px;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
-
-      .button-57 {
-        margin: 10px;
-        border-radius: 6px;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid #18181a;
-        color: #18181a;
-        display: inline-block;
-        font-size: 15px;
-        line-height: 15px;
-        padding: 18px 38px 17px;
-        text-decoration: none;
-        cursor: pointer;
-        background: #a5a58d;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .button-57 span:first-child {
-        position: relative;
-        transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-        z-index: 10;
-      }
-
-      .button-57 span:last-child {
-        color: white;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
-        z-index: 100;
-        opacity: 0;
-        top: 50%;
-        left: 50%;
-        transform: translateY(225%) translateX(-50%);
-        height: 14px;
-        line-height: 13px;
-      }
-
-      .button-57:after {
-        content: "";
-        position: absolute;
-        bottom: -50%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        transform-origin: bottom center;
-        transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
-        transform: skewY(9.3deg) scaleY(0);
-        z-index: 50;
-      }
-
-      .button-57:hover:after {
-        transform-origin: bottom center;
-        transform: skewY(9.3deg) scaleY(2);
-      }
-
-      .button-57:hover span:last-child {
-        transform: translateX(-50%) translateY(-100%);
-        opacity: 1;
-        transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
-      }
-
-      .button-86 {
-        all: unset;
-        width: 202px;
-        height: 30px;
-        font-size: 16px;
-        background: transparent;
-        border: none;
-        position: relative;
-        color: white;
-        cursor: pointer;
-        z-index: 1;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* white-space: nowrap; */
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        left: 648px;
-      }
-
-      .button-86::after,
-      .button-86::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -99999;
-        transition: all 0.4s;
-      }
-
-      .button-86::before {
-        transform: translate(0%, 0%);
-        width: 100%;
-        height: 100%;
-        background: #7f5539;
-        border-radius: 10px;
-      }
-
-      .button-86::after {
-        transform: translate(10px, 10px);
-        width: 35px;
-        height: 35px;
-        background: #ffffff15;
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border-radius: 50px;
-      }
-
-      .button-86:hover::before {
-        transform: translate(5%, 20%);
-        width: 110%;
-        height: 110%;
-      }
-
-      .button-86:hover::after {
-        border-radius: 10px;
-        transform: translate(0, 0);
-        width: 100%;
-        height: 100%;
-      }
-
-      .button-86:active::after {
-        transition: 0s;
-        transform: translate(0, 5%);
-      }
-
-      /* animasi */
-
-      /* :root {
-      --delay: 0;
-      --duration: 800ms;
-      --iterations: 1;
-    } */
-      /* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
-
-      .reveal-text,
-      .reveal-text::after {
-        animation-delay: var(--animation-delay, 2s);
-        animation-iteration-count: var(--iterations, 1);
-        animation-duration: var(--duration, 800ms);
-        animation-fill-mode: both;
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-      }
-
-      .reveal-text {
-        --animation-delay: var(--delay, 0);
-        --animation-duration: var(--duration, 800ms);
-        --animation-iterations: var(--iterations, 1);
-        position: relative;
-        font-size: 10vw;
-        animation-name: clip-text;
-        color: #fff;
-        white-space: nowrap;
-        cursor: default;
-
-        &::after {
-          content: "";
-          position: absolute;
-          z-index: 999;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #cb997e;
-          transform: scaleX(0);
-          transform-origin: 0 50%;
-          pointer-events: none;
-          animation-name: text-revealer;
-        }
-      }
-
-      @keyframes clip-text {
-        from {
-          clip-path: inset(0 100% 0 0);
-        }
-        to {
-          clip-path: inset(0 0 0 0);
-        }
-      }
-
-      @keyframes text-revealer {
-        0%,
-        50% {
-          transform-origin: 0 50%;
-        }
-
-        60%,
-        100% {
-          transform-origin: 100% 50%;
-        }
-
-        60% {
-          transform: scaleX(1);
-        }
-
-        100% {
-          transform: scaleX(0);
-        }
-      }
-
-      /* animasi 2 */
-
-      /* :root {
-      --delay: 0;
-      --duration: 800ms;
-      --iterations: 1;
-    } */
-      /* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
-
-      .reveal-text2,
-      .reveal-text2::after {
-        animation-delay: var(--animation-delay, 2s);
-        animation-iteration-count: var(--iterations, 1);
-        animation-duration: var(--duration, 800ms);
-        animation-fill-mode: both;
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-      }
-
-      .reveal-text2 {
-        --animation-delay: var(--delay, 3s);
-        --animation-duration: var(--duration, 800ms);
-        --animation-iterations: var(--iterations, 1);
-        position: relative;
-        font-size: 10vw;
-        animation-name: clip-text;
-        color: #fff;
-        white-space: nowrap;
-        cursor: default;
-
-        &::after {
-          content: "";
-          position: absolute;
-          z-index: 999;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #cb997e;
-          transform: scaleX(0);
-          transform-origin: 0 50%;
-          pointer-events: none;
-          animation-name: text-revealer;
-        }
-      }
-
-      @keyframes clip-text {
-        from {
-          clip-path: inset(0 100% 0 0);
-        }
-        to {
-          clip-path: inset(0 0 0 0);
-        }
-      }
-
-      @keyframes text-revealer {
-        0%,
-        50% {
-          transform-origin: 0 50%;
-        }
-
-        60%,
-        100% {
-          transform-origin: 100% 50%;
-        }
-
-        60% {
-          transform: scaleX(1);
-        }
-
-        100% {
-          transform: scaleX(0);
-        }
-      }
-
-      /* responsive */
-
-      @media screen and (max-width: 576px) {
-        .CRUSH {
-          background-color: #fff1e6;
-          width: 100vw;
-          height: 100vh;
-          flex-direction: column;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        div .GELSY {
-          font-family: "alegreyabold_italic";
-          text-shadow: 1px 1px 3px #000000;
-          color: #d6ccc2;
-          font-size: 1.8em;
-        }
-
-        div .FOR {
-          font-family: "redressedregular";
-          text-shadow: 1px 1px 3px #000000;
-          color: #d6ccc2;
-          font-size: 2.5em;
-          margin-bottom: -0.19em;
-        }
-
-        .awalan,
-        .akhiran {
-          position: relative;
-          left: 34px;
-          justify-content: center;
-          text-align: center;
-          width: 90%;
-          align-items: center;
-          display: flex;
-          font-size: 1.25em;
-          color: #4b4e41;
-          text-indent: 3em;
-          text-align: justify;
-        }
-
-        .awalan {
-          top: 0;
-        }
-        .akhiran {
-          top: -279px;
-        }
-
-        .isi {
-          padding-left: 10px;
-          flex: 4;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          font-size: 1.25em;
-          color: #4b4e41;
-        }
-
-        .pernyataan {
-          font-family: "alegreyabold_italic";
-          width: 100%;
-          height: 232%;
-          flex-direction: column;
-          display: flex;
-          margin-bottom: -293px;
-        }
-
-        .pernyataan1 {
-          position: relative;
-          top: -50px;
-          margin: 20px;
-        }
-        .pernyataan2 {
-          position: relative;
-          top: -150px;
-          margin: 20px;
-        }
-        .pernyataan3 {
-          position: relative;
-          top: -216px;
-          margin: 20px;
-        }
-        .pernyataan4 {
-          position: relative;
-          top: -268px;
-          margin: 20px;
-        }
-
-        .pernyataan1,
-        .pernyataan3 {
-          display: flex;
-          /* margin-top: -35px; */
-          box-sizing: border-box;
-          flex: 1;
-          margin-left: 3em;
-          margin-right: 7em;
-        }
-
-        .pernyataan2,
-        .pernyataan4 {
-          display: flex;
-          margin: 20px;
-          box-sizing: border-box;
-          flex: 1;
-          margin-left: 7em;
-          margin-right: 3em;
-          text-align: end;
-        }
-
-        .pertanyaan {
-          margin-top: -20px;
-          background-color: #fff1e6;
-          height: 100%;
-          text-align: center;
-          padding-top: 94px;
-        }
-
-        .pertanyaannya {
-          font-family: "redressedregular";
-          text-shadow: 1px 1px 3px #000000;
-          color: #d6ccc2;
-          font-size: 1.8em;
-        }
-
-        div .tanggal {
-          text-shadow: 1px 1px 3px #000000;
-          position: relative;
-          top: 78px;
-          display: flex;
-          justify-content: center;
-          font-size: 1.6em;
-          flex: 1.2;
-          color: #fefae0;
-          word-spacing: 30px;
-        }
-
-        .pertanyaan .note {
-          font-family: "redressedregular";
-          text-shadow: 1px 1px 3px #000000;
-          font-size: 1.8em;
-          color: red;
-        }
-
-        .penjelasan {
-          margin-top: -43px;
-          padding: 15px 100px;
-          color: #cb997e;
-          position: relative;
-          top: 73px;
-          font-family: "redressedregular";
-          text-shadow: 1px 1px 1px #000000;
-          font-size: 1.25em;
-        }
-        .penjelasan2 {
-          margin-top: -20px;
-          padding: 0 100px;
-          color: #cb997e;
-          position: relative;
-          top: 73px;
-          font-family: "redressedregular";
-          text-shadow: 1px 1px 1px #000000;
-          font-size: 1.25em;
-        }
-        .penjelasan3 {
-          margin-top: -20px;
-          padding: 15px 100px;
-          color: #cb997e;
-          position: relative;
-          top: 73px;
-          font-family: "redressedregular";
-          text-shadow: 1px 1px 1px #000000;
-          font-size: 1.25em;
-        }
-
-        .pilihan {
-          position: relative;
-          top: 133px;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-      }
+    }
     </style>
   </head>
   <body>
