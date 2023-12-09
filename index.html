@@ -36,7 +36,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 6px;
       }
 
       div .FOR {
@@ -87,46 +86,46 @@
 
       .pernyataan1 {
         display: flex;
-    box-sizing: border-box;
-    flex: 1;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 78px;
-    width: 51vw;
+        box-sizing: border-box;
+        flex: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 78px;
+        width: 51vw;
       }
 
       .pernyataan2 {
         display: flex;
-    box-sizing: border-box;
-    flex: 1;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 653px;
-    width: 51vw;
+        box-sizing: border-box;
+        flex: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 653px;
+        width: 51vw;
         text-align: end;
       }
       .pernyataan3 {
         display: flex;
-    box-sizing: border-box;
-    flex: 1;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 78px;
-    width: 51vw;
+        box-sizing: border-box;
+        flex: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 78px;
+        width: 51vw;
       }
 
       .pernyataan4 {
         display: flex;
-    box-sizing: border-box;
-    flex: 1;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 653px;
-    width: 51vw;
+        box-sizing: border-box;
+        flex: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 653px;
+        width: 51vw;
         text-align: end;
       }
 
@@ -286,74 +285,6 @@
         transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
       }
 
-      .button-86 {
-        all: unset;
-        width: 202px;
-        height: 30px;
-        font-size: 16px;
-        background: transparent;
-        border: none;
-        position: relative;
-        color: white;
-        cursor: pointer;
-        z-index: 1;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* white-space: nowrap; */
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        left: 648px;
-      }
-
-      .button-86::after,
-      .button-86::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -99999;
-        transition: all 0.4s;
-      }
-
-      .button-86::before {
-        transform: translate(0%, 0%);
-        width: 100%;
-        height: 100%;
-        background: #7f5539;
-        border-radius: 10px;
-      }
-
-      .button-86::after {
-        transform: translate(10px, 10px);
-        width: 35px;
-        height: 35px;
-        background: #ffffff15;
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border-radius: 50px;
-      }
-
-      .button-86:hover::before {
-        transform: translate(5%, 20%);
-        width: 110%;
-        height: 110%;
-      }
-
-      .button-86:hover::after {
-        border-radius: 10px;
-        transform: translate(0, 0);
-        width: 100%;
-        height: 100%;
-      }
-
-      .button-86:active::after {
-        transition: 0s;
-        transform: translate(0, 5%);
-      }
-
       /* animasi */
 
       /* :root {
@@ -505,26 +436,25 @@
       /* responsive */
 
       @media screen and (max-width: 800px) {
-
         body {
-    background-color: #a5a58d;
-    width: 143vw;
-    height: 100vh;
-    overflow-x: hidden;
-    margin: -8px 0 0 0;
-}
+          background-color: #a5a58d;
+          width: 143vw;
+          height: 100vh;
+          overflow-x: hidden;
+          margin: -8px 0 0 0;
+        }
 
         .CRUSH {
           margin-bottom: -1px;
           background-color: #fff1e6;
           width: 143vw;
-          height: 100vh;
+          height: 150vh;
           flex-direction: column;
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 10px;
-        }
+          padding-right: 22px;
+        } 
 
         div .GELSY {
           font-family: "alegreyabold_italic";
@@ -541,17 +471,18 @@
           margin-bottom: -0.19em;
         }
 
-        .wave1,.wave2 {
+        .wave1,
+        .wave2 {
           width: 143vw;
         }
 
         .awalan,
         .akhiran {
           position: relative;
-          left: 34px;
+          left: 40px;
           justify-content: center;
           text-align: center;
-          width: 118%;
+          width: 118vw;
           align-items: center;
           display: flex;
           font-size: 1.25em;
@@ -564,7 +495,7 @@
           top: 0;
         }
         .akhiran {
-          top: -205px;
+          top: -475px;
         }
 
         div .tanggal {
@@ -576,7 +507,7 @@
           color: #fefae0;
           word-spacing: 30px;
           position: relative;
-          top: 106px;
+          top: 122px;
           font-size: 2em;
 
           color: #fefae0;
@@ -598,37 +529,35 @@
         .pernyataan {
           font-family: "alegreyabold_italic";
           width: 108vw;
-          height: 232%;
+          height: 232vh;
           flex-direction: column;
           display: flex;
-          margin-bottom: -205px;
+          margin-bottom: -480px;
         }
 
         .pernyataan1 {
           position: relative;
           top: -60px;
-        right: 0;
-        left: 42px;
+          right: 0;
+          left: 42px;
         }
         .pernyataan2 {
           position: relative;
-          top: -147px;
-    right: 0px;
-    left: 110px;
+          top: -220px;
+          right: 0px;
+          left: 110px;
         }
         .pernyataan3 {
           position: relative;
-    top: -203px;
-    right: 0;
-    left: 44px;
-
+          top: -355px;
+          right: 0;
+          left: 44px;
         }
         .pernyataan4 {
           position: relative;
-    top: -255px;
-    right: 0;
-    left: 110px;
-
+          top: -449px;
+          right: 0;
+          left: 110px;
         }
 
         .pernyataan1,
@@ -653,66 +582,91 @@
           background-color: #fff1e6;
           text-align: center;
           padding-top: 94px;
-          padding: 6px;
-    width: 143vw;
-    height: 100vh;
-    padding: 10px;
+          width: 143vw;
+          height: 150vh;
+          padding-right: 22px;
+        }
+
+        .paragraf {
+          position: relative;
+          top: 130px;
+          left: 10px;
         }
 
         .pertanyaannya {
           font-family: "redressedregular";
           text-shadow: 1px 1px 3px #000000;
           color: #d6ccc2;
-          font-size: 1.8em;
+          font-size: 1.9em;
         }
 
         .pertanyaan .note {
           font-family: "redressedregular";
           text-shadow: 1px 1px 3px #000000;
-          font-size: 1.8em;
+          font-size: 1.9em;
           color: red;
         }
 
         .penjelasan {
           margin-top: -43px;
-            padding: 15px 35px;
+          padding: 15px 35px;
           color: #cb997e;
           position: relative;
-          top: 73px;
+          top: 220px;
           font-family: "redressedregular";
           text-shadow: 1px 1px 1px #000000;
-          font-size: 1.25em;
-          width: 90%;
+          font-size: 1.5em;
+          width: 90;
         }
         .penjelasan2 {
           margin-top: -20px;
-      padding: 15px 35px;
+          padding: 15px 35px;
           color: #cb997e;
           position: relative;
-          top: 73px;
+          top: 230px;
           font-family: "redressedregular";
           text-shadow: 1px 1px 1px #000000;
-          font-size: 1.25em;
-                    width: 90%;
+          font-size: 1.5em;
+          width: 90;
         }
         .penjelasan3 {
           margin-top: -20px;
-            padding: 15px 35px;
+          padding: 15px 35px;
           color: #cb997e;
           position: relative;
-          top: 73px;
+          top: 240px;
           font-family: "redressedregular";
           text-shadow: 1px 1px 1px #000000;
-          font-size: 1.25em;
-                    width: 90%;
+          font-size: 1.5em;
+          width: 90;
         }
 
         .pilihan {
           position: relative;
-          top: 133px;
+          top: 525px;
           align-items: center;
           justify-content: center;
           text-align: center;
+        }
+
+        .button-57 {
+          margin: 10px;
+          border-radius: 6px;
+          position: relative;
+          overflow: hidden;
+          border: 1px solid #18181a;
+          color: #18181a;
+          display: inline-block;
+          font-size: 2em;
+          /* word-spacing: 10px; */
+          padding: 25px 64px;
+          text-decoration: none;
+          cursor: pointer;
+          background: #a5a58d;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          text-shadow: 1px 1px 6px #d6ccc2;
         }
       }
     </style>
@@ -722,16 +676,15 @@
       <h1 class="FOR reveal-text">For the one i have a crush on</h1>
       <h1 class="GELSY reveal-text2">"GELSY KHALILAH SHARLIZ IMRON"</h1>
     </div>
-    <div style="width: 148vw;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1" style= "width: 148vw; " >
-    
-    
-  <path
-    fill="#fff1e6"
-    fill-opacity="1"
-    d="M0,128L26.7,149.3C53.3,171,107,213,160,224C213.3,235,267,213,320,197.3C373.3,181,427,171,480,154.7C533.3,139,587,117,640,133.3C693.3,149,747,203,800,208C853.3,213,907,171,960,133.3C1013.3,96,1067,64,1120,64C1173.3,64,1227,96,1280,106.7C1333.3,117,1387,107,1413,101.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
-  ></path>
-</svg></div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1" style="width: 150vw">
+        <path
+          fill="#fff1e6"
+          fill-opacity="1"
+          d="M0,128L26.7,149.3C53.3,171,107,213,160,224C213.3,235,267,213,320,197.3C373.3,181,427,171,480,154.7C533.3,139,587,117,640,133.3C693.3,149,747,203,800,208C853.3,213,907,171,960,133.3C1013.3,96,1067,64,1120,64C1173.3,64,1227,96,1280,106.7C1333.3,117,1387,107,1413,101.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
 
     <div class="pernyataan">
       <div class="awalan">
@@ -763,13 +716,15 @@
         menemukan kebahagiaanmu, bahkan jika itu bukan dengan diriku.
       </div>
     </div>
-    <div style="width: 148vw;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1" style= "width: 148vw; " >
-      <path
-        fill="#fff1e6"
-        fill-opacity="1"
-        d="M0,128L26.7,149.3C53.3,171,107,213,160,224C213.3,235,267,213,320,197.3C373.3,181,427,171,480,154.7C533.3,139,587,117,640,133.3C693.3,149,747,203,800,208C853.3,213,907,171,960,133.3C1013.3,96,1067,64,1120,64C1173.3,64,1227,96,1280,106.7C1333.3,117,1387,107,1413,101.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-      ></path></svg></div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1" style="width: 150vw">
+        <path
+          fill="#fff1e6"
+          fill-opacity="1"
+          d="M0,128L26.7,149.3C53.3,171,107,213,160,224C213.3,235,267,213,320,197.3C373.3,181,427,171,480,154.7C533.3,139,587,117,640,133.3C693.3,149,747,203,800,208C853.3,213,907,171,960,133.3C1013.3,96,1067,64,1120,64C1173.3,64,1227,96,1280,106.7C1333.3,117,1387,107,1413,101.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
 
     <div class="pertanyaan">
       <p class="paragraf">
