@@ -55,10 +55,6 @@
         font-size: 2.8em;
       }
 
-      .wave1 {
-        width: 100%;
-      }
-
       /* pernyataan */
 
       .pernyataan {
@@ -90,44 +86,52 @@
 
       .pernyataan1 {
         display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 8em;
-        margin-right: 26em;
+    box-sizing: border-box;
+    flex: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 78px;
+    width: 51vw;
       }
 
       .pernyataan2 {
         display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 26em;
-        margin-right: 8em;
+    box-sizing: border-box;
+    flex: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 653px;
+    width: 51vw;
         text-align: end;
       }
       .pernyataan3 {
         display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 8em;
-        margin-right: 26em;
+    box-sizing: border-box;
+    flex: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 78px;
+    width: 51vw;
       }
 
       .pernyataan4 {
         display: flex;
-        margin: 20px;
-        box-sizing: border-box;
-        flex: 1;
-        margin-left: 26em;
-        margin-right: 8em;
+    box-sizing: border-box;
+    flex: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 653px;
+    width: 51vw;
         text-align: end;
       }
 
       div .tanggal {
         position: relative;
-        top: 60px;
+        top: 94px;
         display: flex;
         justify-content: center;
         font-size: 2em;
@@ -139,8 +143,7 @@
       }
 
       .isi {
-        padding-left: 10px;
-        flex: 4;
+        flex: 6;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -501,10 +504,19 @@
       /* responsive */
 
       @media screen and (max-width: 800px) {
+
+        body {
+    background-color: #a5a58d;
+    width: 143vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: -8px 0 0 0;
+}
+
         .CRUSH {
           margin-bottom: -1px;
           background-color: #fff1e6;
-          width: 140vw;
+          width: 143vw;
           height: 100vh;
           flex-direction: column;
           display: flex;
@@ -525,10 +537,6 @@
           color: #d6ccc2;
           font-size: 2.5em;
           margin-bottom: -0.19em;
-        }
-
-        .wave1, .wave2, .pertanyaan {
-          width: 140vw;
         }
 
         .awalan,
@@ -583,7 +591,7 @@
 
         .pernyataan {
           font-family: "alegreyabold_italic";
-          width: 100%;
+          width: 108vw;
           height: 232%;
           flex-direction: column;
           display: flex;
@@ -592,28 +600,36 @@
 
         .pernyataan1 {
           position: relative;
-          top: -70px;
+          top: -60px;
+        right: 0;
+        left: 42px;
         }
         .pernyataan2 {
           position: relative;
-          top: -240px;
+          top: -225px;
+    right: 0px;
+    left: 110px;
         }
         .pernyataan3 {
           position: relative;
-          top: -360px;
+    top: -355px;
+    right: 0;
+    left: 44px;
+
         }
         .pernyataan4 {
           position: relative;
-          top: -465px;
+    top: -475px;
+    right: 0;
+    left: 110px;
+
         }
 
         .pernyataan1,
         .pernyataan3 {
           display: flex;
-          /* margin-top: -35px; */
           box-sizing: border-box;
           flex: 1;
-          margin: 40px 0 40px 35px;
           width: 25em;
         }
 
@@ -622,7 +638,6 @@
           display: flex;
           box-sizing: border-box;
           flex: 1;
-          margin: 40px 0px 40px 94px;
           text-align: end;
           width: 25em;
         }
