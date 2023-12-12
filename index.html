@@ -39,7 +39,7 @@
       div .FOR {
         font-family: "redressedregular";
 
-        text-shadow: 1px 1px 3px #000000;
+        text-shadow: 0px 1px 2px #000000;
         color: #d6ccc2;
         font-size: 3.5em;
         margin-bottom: -0.19em;
@@ -48,9 +48,52 @@
       div .GELSY {
         font-family: "alegreyabold_italic";
 
-        text-shadow: 1px 1px 3px #000000;
+        text-shadow: 0px 1px 2px #000000;
         color: #d6ccc2;
         font-size: 2.8em;
+      }
+
+      div .Waktu {
+        font-family: "redressedregular";
+        text-shadow: 2px 2px 2px #8f8f8f;
+        color: #000000;
+        font-size: 1.5em;
+        text-decoration: underline;
+      }
+
+      .content {
+        width: 5em;
+        position: relative;
+      }
+
+      .content h2 {
+        left: 43px;
+        color: #fff;
+        font-size: 2em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 148px;
+      }
+
+      .content h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 0.5px #b4a198;
+      }
+
+      .content h2:nth-child(2) {
+        color: #000000;
+        animation: animate 4s ease-in-out infinite;
+      }
+
+      @keyframes animate {
+        0%,
+        100% {
+          clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }
+
+        50% {
+          clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
       }
 
       /* pernyataan */
@@ -126,7 +169,7 @@
         display: flex;
         justify-content: center;
         font-size: 2em;
-        text-shadow: 1px 1px 3px #000000;
+        text-shadow: 0px 1px 2px #000000;
         align-items: center;
         flex: 1.2;
         color: #fefae0;
@@ -161,20 +204,20 @@
 
       .pertanyaannya {
         font-family: "redressedregular";
-        text-shadow: 1px 1px 3px #000000;
+        text-shadow: 0px 1px 2px #000000;
         color: #d6ccc2;
         font-size: 3em;
       }
 
       .pertanyaan .note {
         font-family: "redressedregular";
-        text-shadow: 1px 1px 3px #000000;
+        text-shadow: 0px 1px 2px #000000;
         font-size: 3em;
         color: red;
       }
 
       .penjelasan {
-        margin-top: -40px;
+        margin-top: -30px;
         color: #cb997e;
         position: relative;
         top: 73px;
@@ -184,7 +227,7 @@
       }
 
       .penjelasan2 {
-        margin-top: -20px;
+        margin-top: -30px;
         color: #cb997e;
         position: relative;
         top: 73px;
@@ -201,16 +244,15 @@
         text-shadow: 1px 1px 1px #000000;
         font-size: 1.7em;
       }
-
-            .penjelasan4 {
-        margin-top: -40px;
+      .penjelasan4 {
+        margin-top: -30px;
         color: #cb997e;
         position: relative;
         top: 73px;
         font-family: "redressedregular";
         text-shadow: 1px 1px 1px #000000;
         font-size: 1.7em;
-            }
+      }
 
       .pilihan {
         margin-top: 200px;
@@ -374,7 +416,7 @@
       }
 
       .reveal-text2 {
-        --animation-delay: var(--delay, 1.2s);
+        --animation-delay: var(--delay, 3s);
         --animation-duration: var(--duration, 800ms);
         --animation-iterations: var(--iterations, 1);
         position: relative;
@@ -445,7 +487,7 @@
         div .FOR {
           font-family: "redressedregular";
 
-          text-shadow: 1px 1px 3px #000000;
+          text-shadow: 0px 1px 1px #000000;
           color: #d6ccc2;
           font-size: 1.9em;
           margin-bottom: -0.19em;
@@ -453,10 +495,49 @@
 
         div .GELSY {
           font-family: "alegreyabold_italic";
-
-          text-shadow: 1px 1px 3px #000000;
+          text-shadow: 0px 1px 2px #000000;
           color: #d6ccc2;
           font-size: 1.4em;
+        }
+
+        div .Waktu {
+          font-family: "redressedregular";
+          text-shadow: 2px 2px 2px #8f8f8f;
+          color: #000000;
+          font-size: 1em;
+          text-decoration: underline;
+        }
+
+        .content {
+          position: relative;
+        }
+
+        .content h2 {
+          color: #fff;
+          font-size: 8em;
+          position: absolute;
+          transform: translate(-50%, -50%);
+        }
+
+        .content h2:nth-child(1) {
+          color: transparent;
+          -webkit-text-stroke: 2px #03a9f4;
+        }
+
+        .content h2:nth-child(2) {
+          color: #03a9f4;
+          animation: animate 4s ease-in-out infinite;
+        }
+
+        @keyframes animate {
+          0%,
+          100% {
+            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+          }
+
+          50% {
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+          }
         }
 
         /* pernyataan */
@@ -526,7 +607,7 @@
           display: flex;
           justify-content: center;
           font-size: 1.2em;
-          text-shadow: 1px 1px 3px #000000;
+          text-shadow: 0px 1px 1px #000000;
           align-items: center;
           flex: 1.2;
           color: #fefae0;
@@ -564,14 +645,14 @@
 
         .pertanyaannya {
           font-family: "redressedregular";
-          text-shadow: 1px 1px 3px #000000;
+          text-shadow: 0px 1px 1px #000000;
           color: #d6ccc2;
           font-size: 1.4em;
         }
 
         .pertanyaan .note {
           font-family: "redressedregular";
-          text-shadow: 1px 1px 3px #000000;
+          text-shadow: 0px 1px 1px #000000;
           font-size: 1.4em;
           color: red;
         }
@@ -611,7 +692,7 @@
           margin: 10px 18px 0 18px;
         }
 
-         .penjelasan4 {
+        .penjelasan4 {
           margin-top: -10px;
           color: #cb997e;
           position: relative;
@@ -621,7 +702,7 @@
           font-size: 1em;
           text-align: justify;
           margin: 10px 18px 0 18px;
-                }
+        }
 
         .pilihan {
           margin-top: 200px;
@@ -632,7 +713,13 @@
   <body>
     <div class="CRUSH">
       <h1 class="FOR reveal-text">For the one i have a crush on</h1>
-      <h1 class="GELSY reveal-text2">"GELSY KHALILA SHARLIZ IMRON"</h1>
+      <h1 class="GELSY reveal-text2">"GELSY KHALILAH SHARLIZ IMRON"</h1>
+      <section>
+        <div class="content">
+          <h2>11-12-2023</h2>
+          <h2>11-12-2023</h2>
+        </div>
+      </section>
     </div>
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1">
@@ -647,7 +734,7 @@
     <div class="pernyataan">
       <div class="awalan">
         Awalnya, aku tak begitu memperhatikanmu karena belum benar-benar mengenalmu. Namun, seiring berjalannya waktu, kehangatan tumbuh dan aku merasa nyaman saat berada di dekatmu. Hal ini mengejutkan karena sebelumnya, aku selalu merasa
-        canggung ketika bersama perempuan. Tanpa sadar, aku merasa nyamanan ketika bersamamu .apakah ini yang disebut sebagai "cinta"? Apa alasannya?
+        canggung ketika bersama perempuan. Tanpa sadar, aku menemukan kenyamanan yang baru bersamamu.apakah ini yang disebut sebagai "cinta"? Apa alasannya?
       </div>
       <div class="dalam">
         <div class="pernyataan1">
@@ -698,10 +785,10 @@
       <p class="penjelasan3">Kenapa confess? Karena rasanya sangat tidak enak sebelum aku menyatakan perasaaku ini.</p>
       <p class="penjelasan4">Yakin bisa setia hingga akhir? Insyaallah bisa, kalau memang kita cocok dan juga atas izin ALLAH SWT.</p>
       <div class="pilihan">
-        <a href="https://wa.me/6283835989388?text=Aku%20mau"
+        <a href="https://wa.me/6283835989388?text=Aku%20mau%20bersamamu"
           ><button class="button-57 YA" role="button"><span class="text">YA</span><span>Apakah kamu yakin</span></button></a
         >
-        <a href="https://wa.me/6283835989388?text=Maaf,%20aku%20tidak%20mau"
+        <a href="https://wa.me/6283835989388?text=Maaf,%20aku%20tidak%20bisa%20bersamamu"
           ><button class="button-57 TIDAK" role="button"><span class="text">TIDAK</span><span>Apakah kamu yakin?</span></button></a
         >
       </div>
